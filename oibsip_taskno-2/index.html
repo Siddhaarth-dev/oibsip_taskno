@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Responsive Landing Page with Nav Menu</title>
+</head>
+
+<body>
+    <header>
+        <h1>DX</h1>
+
+        <section class="menu">
+            <ul class="menu-list">
+                <li class="active">Home</li>
+                <li>Products</li>
+                <li>Designers</li>
+                <li>Contact</li>
+            </ul>
+
+            <button>
+                <i class="fas fa-times"></i>
+                <i class="fas fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="left">
+            <p class="title">Fashion Designers</p>
+            <p class="msg">Elevate your style with our seasoned designers—an ensemble of seasoned artisans sculpting your vision into a bespoke masterpiece. With a fusion of tradition and contemporary finesse, each dress is a testament to their expertise, ensuring you shine in a creation that transcends trends.</p>
+            <button class="cta">Learn More</button>
+        </section>
+
+        <section class="right">
+            <img src="./images/img.avif" alt="Langing image">
+        </section>
+    </section>
+    <section>
+       <header><h1>Products</h1></header> 
+        <div class="grid-container">
+            <div class="product">
+                <img src="./images/product1.webp" alt="Product 1 Image" width="1060">
+                <p>Introducing our chic women's dress, marrying timeless white elegance with a sandy brown hue. Flattering silhouette, comfort, and versatility in one. Effortlessly modern and sophisticated for any occasion.</p>
+            </div>
+    
+            <div class="product">
+                <img src="./images/product2.webp" alt="Product 2 Image" width="1110">
+                <p>Introducing our European-inspired dress – a modern silhouette with traditional embroidery, seamlessly blending elegance and heritage. Versatile and captivating, perfect for any occasion.</p>
+            </div>
+    
+            <div class="product">
+                <img src="./images/product3.jpg" alt="Product 3 Image" width="960">
+                <p>Introducing our Barbie-inspired pink dress – playful, chic, and adorned with layers of feathers for a touch of sophistication. Perfect for adding glamour to any special occasion.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-section">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i>123 Street, Cityville</p>
+                <p><i class="fas fa-phone"></i>(123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i>info@example.com</p>
+                <p><i class="fab fa-instagram"></i> Instagram: @yourinstagram</p>
+                <p><i class="fab fa-facebook"></i> Facebook: /yourfacebook</p>
+                <p><i class="fab fa-whatsapp"></i> WhatsApp: +123 456 7890</p>
+            </div>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+
+
+</body>
+
+</html>
